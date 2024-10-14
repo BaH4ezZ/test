@@ -1,20 +1,24 @@
-string = input("введите номер дня")
+'''# string = input().split(" ")
+#
+# if int(string[0]) == int(string[1]):
+#     print("Числа равные", string[0])
+# else:
+#     if int(string[0]) > int(string[1]):
+#         print("2 число: ", int(string[1]))
+#         print("1 число: ", int(string[0]))
+#     else:
+#         print("2 число: ", int(string[0]))
+#         print("1 число: ", int(string[1]))
 
-dayofweek = str(datetime.datetime.now().weekday())
-if string == "1":
-    print("понедельник")
-elif string =="2":
-    print("вторник")
-elif string =="3":
-    print("среда")
-elif string == "4":
-    print("четверг")
-elif string =="5":
-    print("пятница")
-elif string =="6":
-    print("суббота")
-elif string =="7":
-    print("воскресенье")
+string = input().split(" ")
+numbers =[]
+for i in string:
+    numbers.append(int(i))
+numbers.sort()
 
-else:
-    print("день не соотвецтвует")
+print(numbers)'''
+
+a = int(input("Число 1: "))
+b = int(input("Число 2: "))
+if a > b:
+    print(str ("a"))
