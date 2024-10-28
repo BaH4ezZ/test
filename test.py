@@ -1,23 +1,29 @@
-'''string = input("Enter: ").split(" ")
-begin = int(string[0])
-end = int(string[1])'''
-
-'''result = ""
-for i in range(begin, end + 1):
-        result += str(i) + " "
-print( result)'''
-
-'''result = ""
-j = end
-for i in range(begin, end + 1):
-    result += str(j) + " "
-    j -= 1
-print( result)'''
-
-'''count = 0
-for i in range(begin, end+1):
-    if i % 5 ==0 and i != 0:
-        count+=1
-print(count)'''
-
-
+a1 = 10
+b2 = 20
+matrix=[[1,2,3],[4,5,6],[7,8,9],[a1,[13,14,[15,16,'OK']],12, b2]]
+search = 'OK'
+for i in matrix:
+    print('Level 1: ', i)
+    if search in i:
+        print('Win: ')
+        break
+    else:
+        for vtoroy in i:
+            print("Level 2: ", vtoroy)
+            if search == vtoroy:
+                print("Win: ")
+                break
+            else:
+                if type(vtoroy) is list:
+                    for tretiy in vtoroy:
+                        print(tretiy)
+                        if search == tretiy:
+                            print("Win: ")
+                            break
+                        else:
+                            if type(tretiy) is list:
+                                for chetv in tretiy:
+                                    print(chetv)
+                                    if search == chetv:
+                                        print("Win: ")
+                                        break
