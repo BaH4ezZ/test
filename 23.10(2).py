@@ -12,3 +12,4 @@ for i in range(int(string[0]), int(string[1])):
     if count == 2:
         numbers.append(i)
 print("Простые", numbers)
+

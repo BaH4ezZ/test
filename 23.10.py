@@ -10,3 +10,4 @@ while True:
     elif chislo == 0:
         print("НОЛЬ")
 
+
